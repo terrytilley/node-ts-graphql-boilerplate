@@ -1,0 +1,26 @@
+{
+   "name": "node-ts-graphql-boilerplate",
+   "version": "1.0.0",
+   "description": "Node TypeScript GraphQL Boilerplate",
+   "main": "src/index.ts",
+   "scripts": {
+      "start": "ts-node src/index.ts"
+   },
+   "dependencies": {
+      "graphql-yoga": "^1.8.2",
+      "pg": "^7.4.1",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.1.20"
+   },
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "@types/ws": "^4.0.2",
+      "nodemon": "^1.17.3",
+      "ts-node": "3.3.0",
+      "tslint": "^5.9.1",
+      "tslint-config-prettier": "^1.10.0",
+      "typescript": "2.5.2"
+   },
+   "author": "Terry Tilley <terry@terrytilley.com>",
+   "license": "ISC"
+}
