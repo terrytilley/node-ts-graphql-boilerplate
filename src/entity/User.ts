@@ -4,9 +4,17 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 export class User {
   @PrimaryGeneratedColumn() id: number;
 
-  @Column() firstName: string;
+  @Column({ type: 'text', unique: true })
+  email: string;
 
-  @Column() lastName: string;
+  @Column({ type: 'varchar', length: '230' })
+  firstName: string;
+
+  @Column({ type: 'varchar', length: '230' })
+  lastName: string;
+
+  @Column({ type: 'boolean', default: false })
+  confirmed: boolean;
 
   @Column() age: number;
 }
